@@ -4,7 +4,6 @@ public class Awesome {
   //fields / properties This is the stuff that Awesome HAS!!!!
   String name;
 
-
   // We need to CONSTRUCT something AWESOME!!!!!
   public Awesome(String name){
     System.out.println("I am the most Awesome " + name);
