@@ -1,10 +1,16 @@
 // Student name
-// class period
-// project name
-// date
+// P2
+// Zero Hero
+// 9/19/2025
 
 /*
  * DESCRIPTION:
+ * The goal of my bakesale is:
+ *   for a baker to make a cake,
+ *   bake it at a bakery
+ *   sell it to a custome
+ *   and deliver the money to the PTA
+ *
  * INPUT:
  * OUTPUT:
  * EDGE CASE:
@@ -12,28 +18,21 @@
 
 package edu.bhscs;
 
-public class Main{
+public class Main {
 
-  public static final float NAME_OF_THIS_FLOAT = 69.42f;
-  public static final char A = 'a';
-
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     String myString = pushup("Garlic");
     System.out.println(myString);
 
     Awesome steve = new Awesome("Steve");
-    Awesome sue   = new Awesome("Sue");
-    Awesome linda = new Awesome("L");
-    Awesome jhon  = new Awesome("With a JH, dumb-ass!");
+    String theGoodStuff = "choclate";
 
-    System.out.println( steve.getName() );
-
+    Cake TheOneBestCake = new Cake(theGoodStuff);
+    TheOneBestCake.eaten();
   }
 
-  public static String pushup(String food){
+  public static String pushup(String food) {
     return "sweat " + food;
   }
-
-
 }

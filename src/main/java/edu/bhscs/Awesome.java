@@ -1,21 +1,26 @@
 package edu.bhscs;
 
 public class Awesome {
-  //fields / properties This is the stuff that Awesome HAS!!!!
+  // fields / properties This is the stuff that Awesome HAS!!!!
   String name;
+  String knowledge;
 
   // We need to CONSTRUCT something AWESOME!!!!!
-  public Awesome(String name){
+  public Awesome(String name) {
     System.out.println("I am the most Awesome " + name);
     this.name = name;
   }
 
   // METHODS ARE ABILITIES OF THE CLASS/TYPE
-  String getName(){
+  String getName() {
     return this.name;
   }
 
+  void learnSomething(String knowledge) {
+    this.knowledge = knowledge;
+  }
+
+  String getKnowledge() {
+    return this.knowledge;
+  }
 }
-
-
-
