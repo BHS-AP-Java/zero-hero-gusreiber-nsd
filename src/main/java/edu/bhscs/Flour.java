@@ -12,7 +12,6 @@ public class Flour {
     this.price = price;
     this.lbs = lbs;
     this.quality = 5;
-    
   }
 
   // method

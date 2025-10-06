@@ -18,21 +18,18 @@
 
 package edu.bhscs;
 
+import java.util.Scanner;
+
 public class Main {
 
   public static void main(String[] args) {
 
-    String myString = pushup("Garlic");
-    System.out.println(myString);
+    Player steve = new Player("stever");
+    Baker BakerSteve = new Baker(steve);
+    BakerSteve.bakeCake();
 
-    Awesome steve = new Awesome("Steve");
-    String theGoodStuff = "choclate";
+    System.out.println("I don'tknow, but I'm done now!!!!");
 
-    Cake TheOneBestCake = new Cake(theGoodStuff);
-    TheOneBestCake.eaten();
-  }
 
-  public static String pushup(String food) {
-    return "sweat " + food;
   }
 }
