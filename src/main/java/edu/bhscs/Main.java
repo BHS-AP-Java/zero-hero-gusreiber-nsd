@@ -1,13 +1,13 @@
-// Student name
-// class period
-// project name
-// date
-
-/*
- * DESCRIPTION:
- * INPUT:
- * OUTPUT:
- * EDGE CASE:
- */
-
 package edu.bhscs;
+
+public class Main {
+  public static void main(String[] args) {
+
+    Player user = new Player("Usario P. Player");
+
+    String name = user.giveAnswer("What is your name?");
+    String age = user.giveAnswer("How old are you?");
+
+    new Cake().draw(name, age);
+  }
+}
