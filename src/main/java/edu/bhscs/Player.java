@@ -6,10 +6,17 @@ public class Player {
   // Properties or fields
   String name;
   Scanner s;
+  int accomplishments;
 
+  // CONSTRUCTOR
   public Player(String name) {
     this.name = name;
     this.s = new Scanner(System.in);
+  }
+
+  // METHODS
+  public void accomplish(int amount) {
+    this.accomplishments += amount;
   }
 
   public void answerQuestions() {
@@ -18,10 +25,9 @@ public class Player {
     System.out.println(question + " is a dumb question!");
   }
 
-  public String giveAnswer( String question ){
+  public String giveAnswer(String question) {
     System.out.println(question);
     return s.nextLine();
-  };
-
-
+  }
+  ;
 }
