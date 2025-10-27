@@ -10,7 +10,10 @@ public class Cake {
   int price;
 
   // I have to make a constructor
-  public Cake() {}
+  public Cake(int weight, String ingredient) {
+    this.weight = weight;
+    this.ingredient = ingredient;
+  }
 
   public Cake(String ingredient, Flour flour, int weight) {
     this.ingredient = ingredient;
@@ -48,7 +51,7 @@ public class Cake {
     System.out.println("I am drawing a cake");
   }
 
-  public void draw(int x, int y, int z, int slope) {
+  public void draw(int x, int y, int z, int slope, String name) {
 
     int transAxis = Math.min(z, y);
     int maxWidth = x + transAxis + 2;
@@ -72,7 +75,7 @@ public class Cake {
 
     // --- Side walls ---
     for (int a = 0; a < z; a++) {
-      printChars('#', x, '|', '|');
+      printChars(name, x, '|', '|');
       printChars('/', Math.min(z - a, y) - 1, '/', '/');
       System.out.println();
     }
@@ -81,8 +84,12 @@ public class Cake {
     drawBottomBorder(x);
   }
 
-  // Helper to print a repeated character
   private static void printChars(char c, int count, char start, char end) {
+    printChars("" + c, count, start, end);
+  }
+
+  // Helper to print a repeated character
+  private static void printChars(String c, int count, char start, char end) {
     System.out.print(start);
     for (int i = 0; i < count; i++) System.out.print(c);
     System.out.print(end);
@@ -121,4 +128,17 @@ public class Cake {
   public int getWeight() {
     return this.weight;
   }
+
+  public void draw(String name, String age) {
+
+    draw(17, 7, 7, 3, name);
+  }
+
+  public void draw(int surface) {}
+
+  public void draw(Table t){
+    this.draw();
+    t.draw();
+  }
+
 }

@@ -16,11 +16,11 @@ public class Baker {
   int cash;
 
   // CONSTRUCTOR
-  Baker(String name) {
+  public Baker(String name){
     this.name = name;
   }
 
-  Baker(Player p) {
+  public Baker(Player p) {
     this.p = p;
   }
 
@@ -46,5 +46,10 @@ public class Baker {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
     }
+  }
+
+  public Cake bakes(int i, String string) {
+    // TODO Auto-generated method stub
+    return new Cake(i, string);
   }
 }
