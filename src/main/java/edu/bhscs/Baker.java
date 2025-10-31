@@ -16,7 +16,7 @@ public class Baker {
   int cash;
 
   // CONSTRUCTOR
-  public Baker(String name){
+  public Baker(String name) {
     this.name = name;
   }
 

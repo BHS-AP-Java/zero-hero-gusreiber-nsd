@@ -136,9 +136,8 @@ public class Cake {
 
   public void draw(int surface) {}
 
-  public void draw(Table t){
+  public void draw(Table t) {
     this.draw();
     t.draw();
   }
-
 }
